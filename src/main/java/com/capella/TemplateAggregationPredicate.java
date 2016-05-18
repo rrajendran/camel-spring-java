@@ -15,6 +15,6 @@ public class TemplateAggregationPredicate implements Predicate {
     public boolean matches(Exchange exchange) {
         Map<String, InputStream> inputStreams = (Map<String, InputStream>) exchange.getProperty("inputStreams");
         System.out.printf("size : " + inputStreams.size());
-        return inputStreams.size() == 3;
+        return inputStreams.size() % 3 == 0;
     }
 }

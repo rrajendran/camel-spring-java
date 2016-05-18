@@ -11,8 +11,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) throws Exception {
         Main main = new Main();
-        AbstractXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("META-INF/spring/camel-context.xml");
-        main.setApplicationContext(applicationContext);
+//        AbstractXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("META-INF/spring/camel-context.xml");
+//        main.setApplicationContext(applicationContext);
         main.run(args);
     }
 }

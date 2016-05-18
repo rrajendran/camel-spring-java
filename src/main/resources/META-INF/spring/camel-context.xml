@@ -12,8 +12,8 @@
         <!-- here is a sample which processes the input files
              (leaving them in place - see the 'noop' flag)
              then performs content based routing on the message using XPath -->
-        <route>
-            <from uri="file:/Users/ramesh/stash/github/camel-spring-java/src/data?noop=true"/>
+        <route streamCache="true">
+            <from uri="file:/Users/ramesh/dev/stash/github/camel-spring-java/src/data?noop=true"/>
             <log message="${in.header.CamelFileName}"/>
 
             <aggregate strategyRef="templateAggregationStrategy" strategyMethodName="aggregate">
